@@ -1,0 +1,217 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500&family=Poppins:ital,wght@0,300;1,300&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border:none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-style: "Times New Roman", Times, serif;
+}
+body{
+    font-style: "Times New Roman", Times, serif;
+    background-color: rgb(18, 10, 57);
+
+}
+
+.header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding: 2rem 9%;
+    background:transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    
+}
+
+.logo{
+    color: #ffffff;
+  font-size: 45px;
+  font-family: forte;
+  text-decoration: none;
+}
+ .navbar a{
+    font-size:20px;
+    color:black;
+    font-family: 400;
+    margin-left:3.5rem;
+    transition: .3s;
+}
+.navbar a:hover,.navbar a.active{
+    color:white;
+
+}
+.header .home-content h1{
+    font-size: 6vmin;
+    color:#ffffff;
+    margin:0;
+}
+#menu-icon{
+    font-size: 3.6;
+    color: #ededed;;
+    cursor:pointer;
+    display: none;
+}
+section{
+    min-height: 100vh;
+     padding: 20rem 9% 20rem;
+     
+   
+}  
+.home{
+    display: flex;
+    align-items: center;
+    padding: 0 35%;
+    background: url("b1.avif");
+    background-size: cover;
+    background-position: center;
+}
+.home-content h1{
+    font-size: 3.6rem;
+    font-weight: 700px;
+    color:white;
+    width:40vw;
+}   
+.home-content .text-animate{
+    position: relative;
+    color:white;
+    font-size: 2rem;
+    
+}    
+.about,.education{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:2rem;
+    line-height: 2rem;
+   
+}
+.about h1{
+    color:aqua;
+    font-size:4rem;
+
+}
+.about p{
+    color:white;
+    font-size:28px
+    
+    
+}
+.education{
+    display:flex;
+    justify-content: center;
+    line-height: 2rem;
+}
+
+.education h2{
+    color:orange;
+    font-size:4rem;
+
+}
+.education h1{
+    color:aqua;
+    line-height: 3rem;
+}
+.education p,li{
+    color:white;
+    font-size: 22px;
+}
+.skills{
+    display:flex;
+    margin-bottom:-4rem;
+    justify-content: space-between;
+    align-items: center;
+}
+    
+.skills h2{
+    color:aqua;
+    font-size:2.5rem;
+}
+.skills img{
+    flex-direction:column;
+    height:60vh;
+    width:50vw;
+    margin-left:50px;
+}
+.samples{
+    grid:rigid layout;
+    align-items: stretch;
+    display: flex;
+    align-items: center;
+}
+
+.samples,img{
+    height:60vh;
+    width:25vw;
+}
+.samples{
+    grid:rigid layout;
+    align-items: center; 
+    align-items:space-between;
+}
+.contact{
+    min-height: auto;
+    padding-bottom: 7rem;
+}
+.contact form{
+    max-width: 70rem;
+    margin: 0 auto;
+    text-align: center;
+}
+.contact form .input-box{
+    position:relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.contact form .input-box .input-feild{
+    position:relative;
+    width:49%;
+    margin: .8rem 0;
+}
+.contact form .input-box .input-feild input,
+.contact form .textarea-feild textarea{
+    width:100%;
+    height:100%;
+    padding: 1rem;
+    font-size: 1rem;
+    color:white;
+    background: transparent;
+    border-radius: .6rem;
+    border:.2rem solid darkblue;
+}
+button{
+    background-color: rgb(0, 183, 200);
+    width:105px;
+    height:40px;
+    color:darkred;
+    border:none;
+    font-size: 15px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-right: 8px;
+    transition: opacity 0.15s;
+}
+.contact ,h2{
+    color:aqua;
+   font-size:2.5rem;
+}
+.social{
+    
+    display: flex;
+    justify-content:center; 
+    margin-top: 3rem;
+    
+}
+.social a{
+    color: aqua;
+    padding:13px;
+    
+}

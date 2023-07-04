@@ -205,12 +205,14 @@ section{
 .skills{
     min-height: auto;
     padding-bottom: 7rem;
+    flex-direction: row;
     
 }
 .skills .skills-row{
     display: flex;
     flex-wrap: wrap;
     gap:5rem;
+    flex-direction: row;
 }    
 .skills-row .skills-column{
     flex: 1 1 40rem;

@@ -214,6 +214,7 @@ section{
 }    
 .skills-row .skills-column{
     flex: 1 1 40rem;
+    flex-direction: row;
 
 }
 .skills-column .title{

@@ -305,6 +305,7 @@ section{
     position:relative;
     width:49%;
     margin: .8rem 0;
+    
 }
 .contact form .input-box .input-feild input,
 .contact form .textarea-feild textarea{
@@ -315,7 +316,7 @@ section{
     color:white;
     background: transparent;
     border-radius: .6rem;
-    border:.2rem solid white
+    border:.1rem solid rgb(195, 193, 193)
 }
 button{
     background-color: rgb(0, 183, 200);
@@ -344,4 +345,11 @@ button{
     color: aqua;
     padding:13px;
     
+}
+input[type=text], input[type=number] {
+   color:aqua;
+}
+::placeholder {
+    color: rgb(26, 24, 24);
+    opacity: 1; 
 }

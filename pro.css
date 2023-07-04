@@ -225,6 +225,8 @@ section{
     border:.2rem solid  aquamarine;
     border-radius: 8px;
     padding: .5rem 1.5rem;
+    width:30vw;
+    /* margin-left: 2rem; */
 }
 .skills-box .skills-content::before{
     content: '';
@@ -258,6 +260,9 @@ section{
     height: 100%;
     border-radius: .3rem;
     background-color: #575454;
+}
+.heading{
+    margin-bottom: 4rem;
 }
 .skills-column:nth-child(1) .skills-content .prograss:nth-child(1) .bar span{
     width :70%;

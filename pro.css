@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500&family=Poppins:ital,wght@0,300;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,300&display=swap');
 *{
     margin:0;
     padding: 0;
@@ -11,8 +11,10 @@
     font-style: "Times New Roman", Times, serif;
 }
 body{
-    font-style: "Times New Roman", Times, serif;
-    background-color: rgb(18, 10, 57);
+    font-family: 'Hanken Grotesk', sans-serif;
+font-family: 'Poppins', sans-serif;
+    background-color:black;
+   
 
 }
 
@@ -33,18 +35,17 @@ body{
 .logo{
     color: #ffffff;
   font-size: 45px;
-  font-family: forte;
   text-decoration: none;
 }
  .navbar a{
     font-size:20px;
-    color:black;
+    color:white;
     font-family: 400;
     margin-left:3.5rem;
     transition: .3s;
 }
 .navbar a:hover,.navbar a.active{
-    color:white;
+    color:aqua;
 
 }
 .header .home-content h1{
@@ -68,10 +69,20 @@ section{
     display: flex;
     align-items: center;
     padding: 0 35%;
-    background: url("b1.avif");
     background-size: cover;
     background-position: center;
 }
+.home::before{
+    content: '';
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+    z-index: 1;
+
+}
+
 .home-content h1{
     font-size: 3.6rem;
     font-weight: 700px;
@@ -84,7 +95,7 @@ section{
     font-size: 2rem;
     
 }    
-.about,.education{
+.about{
     display:flex;
     justify-content: center;
     align-items: center;
@@ -92,6 +103,16 @@ section{
     gap:2rem;
     line-height: 2rem;
    
+}
+.about::before{
+    content: '';
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+    z-index: 1;
+
 }
 .about h1{
     color:aqua;
@@ -108,53 +129,161 @@ section{
     display:flex;
     justify-content: center;
     line-height: 2rem;
+    align-items: center;
+    min-height: auto;
+    padding-bottom: 5rem;
+    color:#ffffff;
+    flex-direction: column;
+    margin-bottom: 4rem;
+}
+.education .education-row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+}
+.title{
+    font-size: 1.8em;
+    color: aquamarine;
 }
 
-.education h2{
-    color:orange;
-    font-size:4rem;
-
+.education-row .education-column{
+    flex:1 1 40rem;
 }
-.education h1{
-    color:aqua;
-    line-height: 3rem;
+.education-column .title{
+    font-size: 2rem;
+    margin:0 0 1.5rem 2rem;
+    margin-bottom: 1rem;
 }
-.education p,li{
-    color:white;
-    font-size: 22px;
+.education-box{
+    border-left: .2rem solid rgb(0, 136, 255);
+}
+.education-box .education-content{
+    position: relative;
+    padding-left: 2rem;
+}
+.education-content .content{
+    position:relative;
+    padding: 1.5rem;
+    border: 5px solid rgb(0, 136, 255);
+    border-radius:13px;
+    margin-bottom: 2rem;
+    
+}
+.year{
+    color: aquamarine;
+    font-size: 20px;
+    padding-bottom: .5rem;
+}
+.education-content,h3{
+    color: aqua;
+}
+.education-content ,p{
+    color: #ffffff;
+    font-size: 1.1rem;
+    padding-top: .5rem;
+}
+.heading ,h1{
+    color: rgb(173, 216, 178);
+    font-size: 2.5rem;
+}
+.education-content .year i{
+    padding-right: .5rem;
+}
+.education-box .education-content::before{
+    content: '';
+    position: absolute;
+    top:0;
+    left: -1rem;
+    margin-left:5.7px;
+    width:14px;
+    height:14px;
+    background-color:  rgb(0, 136, 255);
+    border-radius: 50%;
+    z-index: 1;
 }
 .skills{
-    display:flex;
-    margin-bottom:-4rem;
-    justify-content: space-between;
-    align-items: center;
-}
+    min-height: auto;
+    padding-bottom: 7rem;
     
-.skills h2{
-    color:aqua;
-    font-size:2.5rem;
 }
-.skills img{
-    flex-direction:column;
-    height:60vh;
-    width:50vw;
-    margin-left:50px;
-}
-.samples{
-    grid:rigid layout;
-    align-items: stretch;
+.skills .skills-row{
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
+    gap:5rem;
+}    
+.skills-row .skills-column{
+    flex: 1 1 40rem;
+
+}
+.skills-column .title{
+    font-size: 2.5rem;
+    margin: 0 0 1.5rem;
+}
+.skills-box .skills-content{
+    position: relative;
+    border:.2rem solid  aquamarine;
+    border-radius: 8px;
+    padding: .5rem 1.5rem;
+}
+.skills-box .skills-content::before{
+    content: '';
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+    z-index: 1;
+
+}
+.skills-content .progress{
+    padding: 1rem 0;
+}
+.skills-content .prograss h4{
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: space-between;
+    color:white
+}
+.skills-content .prograss .bar{
+    height: 2.5rem;
+    border-radius: .6rem;
+    border: .2rem solid rgb(0, 136, 255);
+    padding: .5rem;
+    margin: 1rem 0;
+}
+.skills-content .prograss .bar span{
+    display: block;
+    height: 100%;
+    border-radius: .3rem;
+    background-color: #575454;
+}
+.skills-column:nth-child(1) .skills-content .prograss:nth-child(1) .bar span{
+    width :70%;
+}
+.skills-column:nth-child(1) .skills-content .prograss:nth-child(2) .bar span{
+    width :60%;
+}
+.skills-column:nth-child(1) .skills-content .prograss:nth-child(3) .bar span{
+    width :55%;
+}
+.skills-column:nth-child(1) .skills-content .prograss:nth-child(4) .bar span{
+    width :50%;
+}
+.skills-column:nth-child(2) .skills-content .prograss:nth-child(1) .bar span{
+    width :40%;
+}
+.skills-column:nth-child(2) .skills-content .prograss:nth-child(2) .bar span{
+    width :60%;
+}
+.skills-column:nth-child(2) .skills-content .prograss:nth-child(3) .bar span{
+    width :45%;
+}
+.skills-column:nth-child(2) .skills-content .prograss:nth-child(4) .bar span{
+    width :60%;
 }
 
-.samples,img{
-    height:60vh;
-    width:25vw;
-}
-.samples{
-    grid:rigid layout;
-    align-items: center; 
-    align-items:space-between;
+.achivement ,img{
+    margin-left: 1.5rem;
 }
 .contact{
     min-height: auto;
@@ -185,13 +314,13 @@ section{
     color:white;
     background: transparent;
     border-radius: .6rem;
-    border:.2rem solid darkblue;
+    border:.2rem solid white
 }
 button{
     background-color: rgb(0, 183, 200);
     width:105px;
     height:40px;
-    color:darkred;
+    color:black;
     border:none;
     font-size: 15px;
     border-radius: 3px;

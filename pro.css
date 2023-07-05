@@ -205,18 +205,21 @@ section{
 .skills{
     min-height: auto;
     padding-bottom: 7rem;
-    flex-direction: row;
+    
     
 }
 .skills .skills-row{
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     gap:5rem;
-    flex-direction: row;
+    
+    
 }    
 .skills-row .skills-column{
     flex: 1 1 40rem;
     flex-direction: row;
+    
 
 }
 .skills-column .title{
@@ -228,7 +231,7 @@ section{
     border:.2rem solid  aquamarine;
     border-radius: 8px;
     padding: .5rem 1.5rem;
-    width:30vw;
+    width:25vw;
     height: 55vh;
     /* margin-left: 2rem; */
 }
